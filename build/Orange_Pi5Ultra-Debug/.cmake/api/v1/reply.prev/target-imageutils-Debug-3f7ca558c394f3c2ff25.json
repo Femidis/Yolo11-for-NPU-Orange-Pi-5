@@ -1,0 +1,128 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "utils.out/libimageutils.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"utils/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-march=armv8-a -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -g -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/utils"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/stb_image"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/librga/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/jpeg_turbo/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/ab/rpi-sysroot"
+			}
+		}
+	],
+	"id" : "imageutils::@d3ad88163ad4775a7946",
+	"name" : "imageutils",
+	"nameOnDisk" : "libimageutils.a",
+	"paths" : 
+	{
+		"build" : "utils.out",
+		"source" : "utils"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "utils/image_utils.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

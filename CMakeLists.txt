@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(yolo11_rpi LANGUAGES CXX)
-
+set(CMAKE_CXX_STANDARD 17)
 
 set(rknpu_yolo11_file rknpu2/yolo11.cc)
 
 
-include_directories(./include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/)
 
 add_library(rknnrt SHARED IMPORTED )
 
@@ -17,7 +17,13 @@ set_target_properties(rknnrt PROPERTIES
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/ 3rdparty.out)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/utils/ utils.out)
 
-add_executable(yolo11_rpi main.cpp postprocess.cc ${rknpu_yolo11_file})
+add_executable(yolo11_rpi old_main.cpp
+    postprocess.cc
+    ${rknpu_yolo11_file}
+
+    RknnModel.cpp
+    main.cpp
+)
 
 
 target_link_libraries(${PROJECT_NAME}

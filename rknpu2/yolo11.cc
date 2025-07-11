@@ -173,6 +173,8 @@ int inference_yolo11_model(rknn_app_context_t *app_ctx, image_buffer_t *img, obj
 
     memset(od_results, 0x00, sizeof(*od_results));
     memset(&letter_box, 0, sizeof(letterbox_t));
+
+
     memset(&dst_img, 0, sizeof(image_buffer_t));
     memset(inputs, 0, sizeof(inputs));
     memset(outputs, 0, sizeof(outputs));

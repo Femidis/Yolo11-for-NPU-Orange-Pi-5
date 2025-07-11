@@ -1,0 +1,559 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Linux -  - aarch64
+      The host system is: Linux - 6.11.0-26-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++ 
+      Build flags: -isystem=/usr/include;-isystem=/usr/local/include;-isystem=/usr/include/aarch64-linux-gnu
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/4.0.20250610-g828fa0f/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-I6zLjj"
+      binary: "/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-I6zLjj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link=$HOME/qt6/pi/lib"
+      CMAKE_MODULE_PATH: "/home/user/qt6/pi/lib/cmake/Qt6/platforms;/home/user/qt6/pi/lib/cmake/Qt6/platforms"
+      CMAKE_SYSROOT: "/home/ab/rpi-sysroot"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/home/user/qt6/pi/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-I6zLjj'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f4603
+        [1/2] /opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++ --sysroot=/home/ab/rpi-sysroot   -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu    -v -o CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++
+        Target: aarch64-linux-gnu
+        Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c,c++ --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4603.dir/'
+         /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/cc1plus -quiet -v -isysroot /home/ab/rpi-sysroot -D_GNU_SOURCE -isystem =/usr/include -isystem =/usr/local/include -isystem =/usr/include/aarch64-linux-gnu /usr/local/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4603.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccr37xXA.s
+        GNU C++17 (GCC) version 13.3.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/ab/rpi-sysroot/usr/local/include"
+        ignoring nonexistent directory "/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/sys-include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/ab/rpi-sysroot/usr/include
+         /home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/aarch64-linux-gnu
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/backward
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include
+        End of search list.
+        Compiler executable checksum: ee3716336e676f5db8674ab410e553a5
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4603.dir/'
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccr37xXA.s
+        GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++ --sysroot=/home/ab/rpi-sysroot -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link=$HOME/qt6/pi/lib -v -Wl,-v -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f4603 -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu   -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -Wl,-rpath,/home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++
+        COLLECT_LTO_WRAPPER=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper
+        Target: aarch64-linux-gnu
+        Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c,c++ --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-o' 'cmTC_f4603' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4603.'
+         /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/collect2 -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnY2LwY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f4603 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o
+        collect2 version 13.3.0
+        /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnY2LwY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f4603 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o
+        GNU ld (GNU Binutils) 2.42
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-o' 'cmTC_f4603' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4603.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/ab/rpi-sysroot/usr/include]
+          add: [/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/aarch64-linux-gnu]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/backward]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include]
+        end of search list found
+        collapse include dir [/home/ab/rpi-sysroot/usr/include] ==> [/home/ab/rpi-sysroot/usr/include]
+        collapse include dir [/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu] ==> [/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/include/c++/13.3.0]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/aarch64-linux-gnu] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/include/c++/13.3.0/aarch64-linux-gnu]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/backward] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/include/c++/13.3.0/backward]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include] ==> [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed] ==> [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/include]
+        implicit include dirs: [/home/ab/rpi-sysroot/usr/include;/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu;/opt/cross-pi-gcc/aarch64-linux-gnu/include/c++/13.3.0;/opt/cross-pi-gcc/aarch64-linux-gnu/include/c++/13.3.0/aarch64-linux-gnu;/opt/cross-pi-gcc/aarch64-linux-gnu/include/c++/13.3.0/backward;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed;/opt/cross-pi-gcc/aarch64-linux-gnu/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-I6zLjj']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_f4603]
+        ignore line: [[1/2] /opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++ --sysroot=/home/ab/rpi-sysroot   -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu    -v -o CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c c++ --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4603.dir/']
+        ignore line: [ /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/cc1plus -quiet -v -isysroot /home/ab/rpi-sysroot -D_GNU_SOURCE -isystem =/usr/include -isystem =/usr/local/include -isystem =/usr/include/aarch64-linux-gnu /usr/local/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4603.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccr37xXA.s]
+        ignore line: [GNU C++17 (GCC) version 13.3.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/ab/rpi-sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/ab/rpi-sysroot/usr/include]
+        ignore line: [ /home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/aarch64-linux-gnu]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include/c++/13.3.0/backward]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: ee3716336e676f5db8674ab410e553a5]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4603.dir/']
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccr37xXA.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++ --sysroot=/home/ab/rpi-sysroot -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -Wl -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl -rpath-link=$HOME/qt6/pi/lib -v -Wl -v -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f4603 -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu   -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -Wl -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c c++ --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-o' 'cmTC_f4603' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4603.']
+        link line: [ /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/collect2 -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnY2LwY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f4603 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o]
+          arg [/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccnY2LwY.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/ab/rpi-sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f4603] ==> ignore
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+          arg [-L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0] ==> dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0]
+          arg [-L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64] ==> dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64]
+          arg [-L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib] ==> dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib]
+          arg [-L/home/ab/rpi-sysroot/lib] ==> dir [/home/ab/rpi-sysroot/lib]
+          arg [-L/home/ab/rpi-sysroot/usr/lib] ==> dir [/home/ab/rpi-sysroot/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> ignore
+          arg [-rpath-link=/home/user/qt6/pi/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [-lgstphotography-1.0] ==> lib [gstphotography-1.0]
+          arg [-lpulse] ==> lib [pulse]
+          arg [-lpulsecommon-16.1] ==> lib [pulsecommon-16.1]
+          arg [CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o]
+        ignore line: [collect2 version 13.3.0]
+        ignore line: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnY2LwY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f4603 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_f4603.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o]
+        linker tool for 'CXX': /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld
+        collapse obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crt1.o]
+        collapse obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crti.o]
+        collapse obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crtn.o]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+        collapse library dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0] ==> [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0]
+        collapse library dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib64]
+        collapse library dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib]
+        collapse library dir [/home/ab/rpi-sysroot/lib] ==> [/home/ab/rpi-sysroot/lib]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib] ==> [/home/ab/rpi-sysroot/usr/lib]
+        implicit libs: [gstphotography-1.0;pulse;pulsecommon-16.1;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crt1.o;/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crti.o;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o;/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crtn.o]
+        implicit dirs: [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu;/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0;/opt/cross-pi-gcc/aarch64-linux-gnu/lib64;/opt/cross-pi-gcc/aarch64-linux-gnu/lib;/home/ab/rpi-sysroot/lib;/home/ab/rpi-sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.42
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "3rdparty/CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc 
+      Build flags: -isystem=/usr/include;-isystem=/usr/local/include;-isystem=/usr/include/aarch64-linux-gnu
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/4.0.20250610-g828fa0f/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "3rdparty/CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-ahqvbw"
+      binary: "/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-ahqvbw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link=$HOME/qt6/pi/lib"
+      CMAKE_MODULE_PATH: "/home/user/qt6/pi/lib/cmake/Qt6/platforms;/home/user/qt6/pi/lib/cmake/Qt6/platforms"
+      CMAKE_SYSROOT: "/home/ab/rpi-sysroot"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/home/user/qt6/pi/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-ahqvbw'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ddaf7
+        [1/2] /opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc --sysroot=/home/ab/rpi-sysroot   -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu    -v -o CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc
+        Target: aarch64-linux-gnu
+        Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c,c++ --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ddaf7.dir/'
+         /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/cc1 -quiet -v -isysroot /home/ab/rpi-sysroot -isystem =/usr/include -isystem =/usr/local/include -isystem =/usr/include/aarch64-linux-gnu /usr/local/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ddaf7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -o /tmp/cc6cfB73.s
+        GNU C17 (GCC) version 13.3.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/ab/rpi-sysroot/usr/local/include"
+        ignoring nonexistent directory "/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/sys-include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/ab/rpi-sysroot/usr/include
+         /home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include
+        End of search list.
+        Compiler executable checksum: 83cf72cfd3c0403904e97850eb06d9b6
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ddaf7.dir/'
+         /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o /tmp/cc6cfB73.s
+        GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc --sysroot=/home/ab/rpi-sysroot -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link=$HOME/qt6/pi/lib -v -Wl,-v -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -o cmTC_ddaf7 -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu   -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -Wl,-rpath,/home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc
+        COLLECT_LTO_WRAPPER=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper
+        Target: aarch64-linux-gnu
+        Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c,c++ --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-o' 'cmTC_ddaf7' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ddaf7.'
+         /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/collect2 -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j5sso.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_ddaf7 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o
+        collect2 version 13.3.0
+        /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j5sso.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_ddaf7 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o
+        GNU ld (GNU Binutils) 2.42
+        COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-o' 'cmTC_ddaf7' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ddaf7.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "3rdparty/CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/ab/rpi-sysroot/usr/include]
+          add: [/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed]
+          add: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include]
+        end of search list found
+        collapse include dir [/home/ab/rpi-sysroot/usr/include] ==> [/home/ab/rpi-sysroot/usr/include]
+        collapse include dir [/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu] ==> [/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include] ==> [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed] ==> [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed]
+        collapse include dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/include]
+        implicit include dirs: [/home/ab/rpi-sysroot/usr/include;/home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed;/opt/cross-pi-gcc/aarch64-linux-gnu/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "3rdparty/CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/CMakeFiles/CMakeScratch/TryCompile-ahqvbw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_ddaf7]
+        ignore line: [[1/2] /opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc --sysroot=/home/ab/rpi-sysroot   -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu    -v -o CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c c++ --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ddaf7.dir/']
+        ignore line: [ /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/cc1 -quiet -v -isysroot /home/ab/rpi-sysroot -isystem =/usr/include -isystem =/usr/local/include -isystem =/usr/include/aarch64-linux-gnu /usr/local/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ddaf7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -o /tmp/cc6cfB73.s]
+        ignore line: [GNU C17 (GCC) version 13.3.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/ab/rpi-sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/ab/rpi-sysroot/usr/include]
+        ignore line: [ /home/ab/rpi-sysroot/usr/include/aarch64-linux-gnu]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/include-fixed]
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 83cf72cfd3c0403904e97850eb06d9b6]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ddaf7.dir/']
+        ignore line: [ /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o /tmp/cc6cfB73.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-o' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc --sysroot=/home/ab/rpi-sysroot -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -Wl -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl -rpath-link=$HOME/qt6/pi/lib -v -Wl -v -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -o cmTC_ddaf7 -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu   -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -Wl -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.3.0/configure --prefix=/opt/cross-pi-gcc --target=aarch64-linux-gnu --enable-languages=c c++ --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64/:/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/:/home/ab/rpi-sysroot/lib/:/home/ab/rpi-sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ab/rpi-sysroot' '-isystem' '=/usr/include' '-isystem' '=/usr/local/include' '-isystem' '=/usr/include/aarch64-linux-gnu' '-v' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-o' 'cmTC_ddaf7' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu' '-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ddaf7.']
+        link line: [ /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/collect2 -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j5sso.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_ddaf7 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o]
+          arg [/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1j5sso.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/ab/rpi-sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ddaf7] ==> ignore
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+          arg [-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+          arg [-L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0] ==> dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0]
+          arg [-L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64] ==> dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64]
+          arg [-L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib] ==> dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib]
+          arg [-L/home/ab/rpi-sysroot/lib] ==> dir [/home/ab/rpi-sysroot/lib]
+          arg [-L/home/ab/rpi-sysroot/usr/lib] ==> dir [/home/ab/rpi-sysroot/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> ignore
+          arg [-rpath-link=/home/user/qt6/pi/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [-lgstphotography-1.0] ==> lib [gstphotography-1.0]
+          arg [-lpulse] ==> lib [pulse]
+          arg [-lpulsecommon-16.1] ==> lib [pulsecommon-16.1]
+          arg [CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o]
+          arg [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o] ==> obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o]
+        ignore line: [collect2 version 13.3.0]
+        ignore line: [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld -plugin /opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/opt/cross-pi-gcc/libexec/gcc/aarch64-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j5sso.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ab/rpi-sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_ddaf7 /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64 -L/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib -L/home/ab/rpi-sysroot/lib -L/home/ab/rpi-sysroot/usr/lib -O1 --hash-style=gnu --as-needed -rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -rpath-link=/home/user/qt6/pi/lib -v -lgstphotography-1.0 -lpulse -lpulsecommon-16.1 CMakeFiles/cmTC_ddaf7.dir/CMakeCCompilerABI.c.o -rpath /home/ab/rpi-sysroot:/usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/pulseaudio -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o]
+        linker tool for 'C': /opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld
+        collapse obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crt1.o] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crt1.o]
+        collapse obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crti.o] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crti.o]
+        collapse obj [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/crtn.o] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crtn.o]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio] ==> [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio]
+        collapse library dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0] ==> [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0]
+        collapse library dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib/../lib64] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib64]
+        collapse library dir [/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/lib] ==> [/opt/cross-pi-gcc/aarch64-linux-gnu/lib]
+        collapse library dir [/home/ab/rpi-sysroot/lib] ==> [/home/ab/rpi-sysroot/lib]
+        collapse library dir [/home/ab/rpi-sysroot/usr/lib] ==> [/home/ab/rpi-sysroot/usr/lib]
+        implicit libs: [gstphotography-1.0;pulse;pulsecommon-16.1;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crt1.o;/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crti.o;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtbegin.o;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/crtend.o;/opt/cross-pi-gcc/aarch64-linux-gnu/lib/crtn.o]
+        implicit dirs: [/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu;/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio;/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0;/opt/cross-pi-gcc/aarch64-linux-gnu/lib64;/opt/cross-pi-gcc/aarch64-linux-gnu/lib;/home/ab/rpi-sysroot/lib;/home/ab/rpi-sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "3rdparty/CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/opt/cross-pi-gcc/lib/gcc/aarch64-linux-gnu/13.3.0/../../../../aarch64-linux-gnu/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.42
+...

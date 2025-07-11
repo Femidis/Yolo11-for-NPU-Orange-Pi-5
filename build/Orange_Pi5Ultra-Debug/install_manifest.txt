@@ -1,0 +1,5 @@
+/tmp/lib/librga.so
+/tmp/bin/yolo11_rpi
+/tmp/model/bus.jpg
+/tmp/model/coco_80_labels_list.txt
+/tmp/model/yolo11n.rknn

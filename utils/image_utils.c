@@ -698,6 +698,10 @@ int convert_image(image_buffer_t* src_img, image_buffer_t* dst_img, image_rect_t
 
 int convert_image_with_letterbox(image_buffer_t* src_image, image_buffer_t* dst_image, letterbox_t* letterbox, char color)
 {
+
+    printf("===%d %d %f\n", letterbox->x_pad,letterbox->y_pad,letterbox->scale);
+
+
     int ret = 0;
     int allow_slight_change = 1;
     int src_w = src_image->width;

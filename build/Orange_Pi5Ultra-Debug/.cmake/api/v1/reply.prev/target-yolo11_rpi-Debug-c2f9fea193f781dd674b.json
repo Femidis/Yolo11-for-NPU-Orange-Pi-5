@@ -1,0 +1,326 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "yolo11_rpi"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"add_link_options",
+			"include",
+			"project",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/home/user/qt6/toolchain.cmake",
+			"/home/user/qt6/pi/lib/cmake/Qt6/qt.toolchain.cmake",
+			"build/Orange_Pi5Ultra-Debug/CMakeFiles/4.0.20250610-g828fa0f/CMakeSystem.cmake",
+			"utils/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 6,
+				"parent" : 4
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 50,
+				"parent" : 6
+			},
+			{
+				"file" : 1,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 42,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 38,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 45,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-march=armv8-a -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -g -std=gnu++17 -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/utils"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/stb_image"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/librga/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/jpeg_turbo/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/ab/rpi-sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "fileutils::@d3ad88163ad4775a7946"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "imagedrawing::@d3ad88163ad4775a7946"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "imageutils::@d3ad88163ad4775a7946"
+		}
+	],
+	"id" : "yolo11_rpi::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/tmp"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-march=armv8-a -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-rpath-link=/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link=$$HOME/qt6/pi/lib",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-L/home/ab/rpi-sysroot/usr/lib/aarch64-linux-gnu/pulseaudio",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-lgstphotography-1.0",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-lpulse",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-lpulsecommon-16.1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/ab/rpi-sysroot:/home/user/Work/Yolo/yolo11_rpi/libs:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "utils.out/libimageutils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "utils.out/libfileutils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "utils.out/libimagedrawing.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/home/user/Work/Yolo/yolo11_rpi/libs/librknnrt.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/librga/Linux/aarch64/librga.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/jpeg_turbo/Linux/aarch64/libturbojpeg.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"sysroot" : 
+		{
+			"path" : "/home/ab/rpi-sysroot"
+		}
+	},
+	"name" : "yolo11_rpi",
+	"nameOnDisk" : "yolo11_rpi",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "old_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "postprocess.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rknpu2/yolo11.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RknnModel.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

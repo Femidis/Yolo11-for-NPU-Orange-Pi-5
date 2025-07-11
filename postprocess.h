@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <vector>
-#include "include/rknn_api.h"
+#include "rknn_api.h"
 #include "utils/common.h"
 #include "utils/image_utils.h"
 

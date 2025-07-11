@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/cmake_install.cmake",
+		"/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/3rdparty.out/cmake_install.cmake",
+		"/home/user/Work/Yolo/yolo11_rpi/build/Orange_Pi5Ultra-Debug/utils.out/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
