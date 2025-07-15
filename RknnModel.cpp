@@ -65,7 +65,7 @@ int RknnModel::InitModel(const char* model_filename){
 
     rknn_context rknn_ctx;
 
-    int ret = rknn_init(&rknn_ctx, model_data, model_data_length, 0, NULL);;
+    int ret = rknn_init(&rknn_ctx, model_data, model_data_length, RKNN_FLAG_COLLECT_PERF_MASK, NULL);;
 
     delete[] model_data;
 
@@ -378,10 +378,18 @@ int RknnModel::InferenceModel(const char*  image_path){
 
     }
 
+    rknn_perf_detail perf_detail;
+    ret = rknn_query(rknn_ctx, RKNN_QUERY_PERF_DETAIL, &perf_detail, sizeof(perf_detail));
+
+    std::ofstream out;          // поток для записи
+    out.open("yolo_report1.txt");      // открываем файл для записи
+    if (out.is_open())
+    {
+        out << perf_detail.perf_data << std::endl;
+    }
+    out.close();
+
     rknn_outputs_release(rknn_ctx, io_num.n_output, outputs);
-
-
-
 
     return 0;
 }

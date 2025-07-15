@@ -17,19 +17,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 57,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 60,
-				"parent" : 0
-			},
-			{
-				"command" : 0,
-				"file" : 0,
-				"line" : 66,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -41,7 +35,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 69,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 70,
 				"parent" : 0
 			}
 		]
@@ -96,7 +96,8 @@
 			"destination" : "model",
 			"paths" : 
 			[
-				"model/yolo11n.rknn"
+				"model/yolo11n.rknn",
+				"model/yolo5s.rknn"
 			],
 			"type" : "file"
 		}

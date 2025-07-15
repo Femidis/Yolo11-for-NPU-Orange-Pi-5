@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "utils.out/libimageutils.a"
+			"path" : "utils.out/libfileutils.a"
 		}
 	],
 	"backtrace" : 1,
@@ -28,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
@@ -43,13 +43,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 32,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 48,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -60,7 +54,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-march=armv8-a -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -g -fdiagnostics-color=always"
+					"fragment" : " -isystem=/usr/include -isystem=/usr/local/include -isystem=/usr/include/aarch64-linux-gnu -g -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
@@ -72,18 +66,6 @@
 				{
 					"backtrace" : 4,
 					"path" : "/home/user/Work/Yolo/yolo11_rpi/utils"
-				},
-				{
-					"backtrace" : 4,
-					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/stb_image"
-				},
-				{
-					"backtrace" : 4,
-					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/librga/include"
-				},
-				{
-					"backtrace" : 5,
-					"path" : "/home/user/Work/Yolo/yolo11_rpi/3rdparty/jpeg_turbo/include"
 				}
 			],
 			"language" : "C",
@@ -97,9 +79,9 @@
 			}
 		}
 	],
-	"id" : "imageutils::@d3ad88163ad4775a7946",
-	"name" : "imageutils",
-	"nameOnDisk" : "libimageutils.a",
+	"id" : "fileutils::@d3ad88163ad4775a7946",
+	"name" : "fileutils",
+	"nameOnDisk" : "libfileutils.a",
 	"paths" : 
 	{
 		"build" : "utils.out",
@@ -120,7 +102,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "utils/image_utils.c",
+			"path" : "utils/file_utils.c",
 			"sourceGroupIndex" : 0
 		}
 	],

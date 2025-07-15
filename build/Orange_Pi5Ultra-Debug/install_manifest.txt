@@ -4,3 +4,4 @@
 /home/ab/yolo11_rpi/model/bus.jpg
 /home/ab/yolo11_rpi/model/coco_80_labels_list.txt
 /home/ab/yolo11_rpi/model/yolo11n.rknn
+/home/ab/yolo11_rpi/model/yolo5s.rknn
