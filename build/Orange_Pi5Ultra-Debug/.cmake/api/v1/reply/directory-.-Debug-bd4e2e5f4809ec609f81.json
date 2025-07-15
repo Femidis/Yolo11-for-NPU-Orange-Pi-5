@@ -17,25 +17,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 37,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 43,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 44,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 46,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 70,
 				"parent" : 0
 			}
 		]
@@ -44,6 +50,16 @@
 	[
 		{
 			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libs/librknnrt.so"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
 			"component" : "Unspecified",
 			"destination" : "bin",
 			"paths" : 
@@ -55,7 +71,7 @@
 			"type" : "target"
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 3,
 			"component" : "Unspecified",
 			"destination" : "model",
 			"paths" : 
@@ -65,7 +81,7 @@
 			"type" : "file"
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"component" : "Unspecified",
 			"destination" : "model",
 			"paths" : 
@@ -75,7 +91,7 @@
 			"type" : "file"
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"component" : "Unspecified",
 			"destination" : "model",
 			"paths" : 

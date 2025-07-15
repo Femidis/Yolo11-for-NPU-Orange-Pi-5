@@ -27,7 +27,7 @@
 
 static char *labels[OBJ_CLASS_NUM];
 
-inline static int clamp(float val, int min, int max) { return val > min ? (val < max ? val : max) : min; }
+inline int clamp(float val, int min, int max) { return val > min ? (val < max ? val : max) : min; }
 
 static char *readLine(FILE *fp, char *buffer, int *len)
 {
@@ -106,7 +106,7 @@ static float CalculateOverlap(float xmin0, float ymin0, float xmax0, float ymax0
     return u <= 0.f ? 0.f : (i / u);
 }
 
-static int nms(int validCount, std::vector<float> &outputLocations, std::vector<int> classIds, std::vector<int> &order,
+int nms(int validCount, std::vector<float> &outputLocations, std::vector<int> classIds, std::vector<int> &order,
                int filterId, float threshold)
 {
     for (int i = 0; i < validCount; ++i)
@@ -144,7 +144,7 @@ static int nms(int validCount, std::vector<float> &outputLocations, std::vector<
     return 0;
 }
 
-static int quick_sort_indice_inverse(std::vector<float> &input, int left, int right, std::vector<int> &indices)
+int quick_sort_indice_inverse(std::vector<float> &input, int left, int right, std::vector<int> &indices)
 {
     float key;
     int key_index;
@@ -297,7 +297,7 @@ static int process_u8(uint8_t *box_tensor, int32_t box_zp, float box_scale,
     return validCount;
 }
 
-static int process_i8(int8_t *box_tensor, int32_t box_zp, float box_scale,
+int process_i8(int8_t *box_tensor, int32_t box_zp, float box_scale,
                       int8_t *score_tensor, int32_t score_zp, float score_scale,
                       int8_t *score_sum_tensor, int32_t score_sum_zp, float score_sum_scale,
                       int grid_h, int grid_w, int stride, int dfl_len,
@@ -367,7 +367,7 @@ static int process_i8(int8_t *box_tensor, int32_t box_zp, float box_scale,
     return validCount;
 }
 
-static int process_fp32(float *box_tensor, float *score_tensor, float *score_sum_tensor, 
+int process_fp32(float *box_tensor, float *score_tensor, float *score_sum_tensor,
                         int grid_h, int grid_w, int stride, int dfl_len,
                         std::vector<float> &boxes, 
                         std::vector<float> &objProbs, 

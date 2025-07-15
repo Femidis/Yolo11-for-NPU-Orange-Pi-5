@@ -16,8 +16,8 @@
 #ifndef _RKNN_DEMO_YOLO11_H_
 #define _RKNN_DEMO_YOLO11_H_
 
-#include "include/rknn_api.h"
-#include "utils/common.h"
+#include "rknn_api.h"
+#include "../utils/common.h"
 
 #if defined(RV1106_1103) 
     typedef struct {
